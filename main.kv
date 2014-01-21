@@ -1,0 +1,31 @@
+#:kivy 1.8.0
+#:import SGridLayout SGridLayout
+#:import SGridLayoutCell SGridLayout
+
+BoxLayout:
+    orientation: 'vertical'
+    SGridLayout:
+        cols: 5
+        rows: 4
+        id: gd
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: '50dp'
+        TextInput:
+            text: '1'
+            id: x
+        TextInput:
+            text: '1'
+            id: y
+        TextInput:
+            text: '1'
+            id: w
+        TextInput:
+            text: '1'
+            id: h
+        Button:
+            text: 'Add'
+            on_press: app.add(gd, x, y, w, h)
+        Button:
+            text: 'Remove'
