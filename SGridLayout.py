@@ -101,8 +101,6 @@ class SGridLayout(GridLayout):
             for j in range(height):
                 self.remove_widget(row - i, col + j)
 
-__author__ = 'jf'
-
 if __name__ == '__main__':
     from kivy.app import App
     from kivy.uix.button import Button
